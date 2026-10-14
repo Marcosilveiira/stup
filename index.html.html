@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>unperson — CS2 player profile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav aria-label="Principal"><b>unperson</b>
+<ul><li><a href="#home" class="on">ÍNDICE</a></li><li><a href="#setup">SETUP</a></li><li><a href="#settings">CONFIGS</a></li><li><a href="#playstyle">ESTILO</a></li><li><a href="#about">SOBRE</a></li></ul></nav>
+
+<main>
+<section id="home" aria-label="Index">
+ <div class="hero">
+  <div class="meta">
+   <div class="tag">COUNTER-STRIKE 2 / PERFIL DO JOGADOR</div>
+   <div class="slogan">No identity. Just aim.</div>
+   <div class="status"><span class="dot"></span>MODO COMPETITIVO</div>
+   <div class="hud"><span>ID <i>UNP-0001</i></span><span>TICK <i id="tick">128</i></span><span>SINAL <i>LIMPO</i></span></div>
+  </div>
+  <div class="portrait" id="portrait">
+   <img id="av" src="assets/avatar.jpg" alt="Avatar de unperson: figura de hábito de freira cobrindo os olhos com as duas mãos, com dentes cravejados de brilho">
+   <span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span><span class="scan"></span>
+  </div>
+  <h1 class="name nameclip" aria-label="unperson"><span aria-hidden="true" style="--i:0">u</span><span aria-hidden="true" style="--i:1">n</span><span aria-hidden="true" style="--i:2">p</span><span aria-hidden="true" style="--i:3">e</span><span aria-hidden="true" style="--i:4">r</span><span aria-hidden="true" style="--i:5">s</span><span aria-hidden="true" style="--i:6">o</span><span aria-hidden="true" style="--i:7">n</span></h1>
+ </div>
+ <a class="scroll" href="#setup">ROLAR</a>
+</section>
+
+<section id="setup"><div class="wrap">
+ <p class="lab">Equipamento</p><h2>Meu setup</h2>
+ <p class="lead">Cinco peças. Sem excesso.</p>
+ <div class="grid" id="gear"></div>
+</div></section>
+
+<section id="settings"><div class="wrap">
+ <p class="lab">Ficha técnica</p><h2>Minhas configs de CS2</h2>
+ <p class="lead">Os valores que uso no servidor.</p>
+ <div class="sheet reveal">
+  <div class="big"><span class="lab">VÍDEO</span><b>1280×960</b><small>RESOLUÇÃO</small></div>
+  <div class="big"><span class="lab">MOUSE</span><b><span data-n="400">400</span> DPI</b><small>HARDWARE</small></div>
+  <div class="big"><span class="lab">MOUSE</span><b><span data-n="1.35" data-d="2">1.35</span> SENS</b><small>NO JOGO</small></div>
+  <div class="big"><span class="lab">RESULTADO</span><b><span data-n="540">540</span> eDPI</b><small>400 × 1.35 = 540</small></div>
+ </div>
+ <div class="rows reveal">
+  <div class="grp"><span class="lab">VÍDEO</span><dl><div><dt>Resolução</dt><dd>1280 × 960</dd></div><div><dt>Proporção</dt><dd>4:3</dd></div><div><dt>Imagem</dt><dd>Stretched</dd></div></dl></div>
+  <div class="grp"><span class="lab">MOUSE</span><dl><div><dt>DPI</dt><dd>400</dd></div><div><dt>Sensibilidade</dt><dd>1.35</dd></div><div><dt>eDPI</dt><dd>540</dd></div></dl></div>
+  <div class="grp"><span class="lab">GRÁFICOS</span><dl><div><dt>Qualidade</dt><dd>Tudo no Low</dd></div></dl></div>
+ </div>
+ <div class="calc"><span class="lab" id="hint">Copia todos os valores como texto.</span>
+  <button class="copy" id="copy" type="button"><span id="cl">COPIAR CONFIGURAÇÕES</span></button></div>
+ <p class="sr" role="status" aria-live="polite" id="live"></p>
+</div></section>
+
+<section id="playstyle" aria-label="Playstyle"><div class="wrap">
+ <p class="lab">Estilo de jogo</p>
+ <div class="stage" id="stage">
+  <div class="phrase on">No face.<br>No trace.</div>
+  <div class="phrase">Less talk.<br>More frags.</div>
+  <div class="phrase">Precision<br>over noise.</div>
+  <div class="phrase">Built for<br>the clutch.</div>
+  <div class="phrase">Unseen. Unheard.<br>Unperson.</div>
+ </div>
+ <div class="pick" id="pick" role="group" aria-label="Escolher frase"></div>
+</div></section>
+
+<section id="about"><div class="wrap about">
+ <div><p class="lab">Sobre</p><h2>unperson</h2></div>
+ <div>
+  <p class="big2">A name without a face. A presence without a trace.</p>
+  <p style="margin-top:28px;color:var(--dim)">Counter-Strike 2. Mentalidade competitiva. Nada além do necessário.</p>
+ </div>
+</div></section>
+</main>
+
+<footer><b>unperson</b><span>COUNTER-STRIKE 2<br>1280×960 / 400 DPI / 1.35 / 540 eDPI</span><span>YOU WERE NEVER HERE.</span></footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
